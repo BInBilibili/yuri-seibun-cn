@@ -10,3 +10,5 @@ data/tr2.js
 data/tr3.js
 data/tr4.js
 data/build_snapshot.js
+# 该文件需要 token 有 workflow 权限才能推送;本地保留,加权限后可启用
+.github/workflows/deploy.yml

@@ -38,7 +38,16 @@ node scripts/fetch-covers.mjs   # 可选:本地也下载封面(需能访问楽�
 
 ## 部署
 
-推送到 GitHub 后,`.github/workflows/deploy.yml` 自动构建并发布到 GitHub Pages(构建时自动下载全部封面并自托管)。
+当前采用 gh-pages 分支发布:
+
+```bash
+npm run build
+node scripts/fetch-covers.mjs   # 下载全部封面到 dist/covers(直连失败自动走 wsrv.nl 代理)
+npx gh-pages -d dist            # 推送 dist 到 gh-pages 分支
+```
+
+仓库内保留 `.github/workflows/deploy.yml`(未跟踪):若 token 具有 `workflow` 权限
+(`gh auth refresh -s workflow`),可推送到 GitHub 后改用 Actions 自动构建发布。
 
 ## 版权说明
 
