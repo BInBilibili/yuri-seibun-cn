@@ -1,0 +1,12 @@
+node_modules/
+dist/
+data/works_0.json
+data/works_600.json
+data/seibun_page.html
+data/unique_titles.json
+data/tag_freq.json
+data/tr1.js
+data/tr2.js
+data/tr3.js
+data/tr4.js
+data/build_snapshot.js

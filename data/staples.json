@@ -1,0 +1,435 @@
+[
+ {
+  "id": "bce54adf-1977-4258-9022-b6b36f6c8d2c",
+  "title": "やがて君になる",
+  "author": "仲谷鳰",
+  "genre": "漫画",
+  "tags": [
+   "学園",
+   "ラブコメ",
+   "感動",
+   "完結済み",
+   "アニメ化",
+   "ドラマ・シリアス",
+   "日常",
+   "青春",
+   "部活",
+   "声優・芸能界"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4326/9784048654326.jpg?_ex=600x600",
+  "volumes": 8,
+  "status": "完結"
+ },
+ {
+  "id": "1223e0f9-db44-4d37-98c9-64584d23437f",
+  "title": "ささやくように恋を唄う",
+  "author": "竹嶋えく",
+  "genre": "Web漫画",
+  "tags": [
+   "ドラマ・シリアス",
+   "音楽・バンド",
+   "部活",
+   "学園"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://cdn-img.ichicomi.com/public/series-thumbnail/2550912965923184113-31d5527bdf8f7dbad6009879183b4d2c?1752730099",
+  "volumes": null,
+  "status": "連載中"
+ },
+ {
+  "id": "b215a086-241b-48d2-9c02-cf5fe3ffee2e",
+  "title": "週に一度クラスメイトを買う話",
+  "author": "羽田宇佐/U35",
+  "genre": "小説",
+  "tags": [
+   "ドラマ・シリアス",
+   "心理サスペンス",
+   "青春",
+   "ツンデレ"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8788/9784040748788_1_31.jpg?_ex=600x600",
+  "volumes": 10,
+  "status": "連載中"
+ },
+ {
+  "id": "d9355136-4c3a-455d-955b-ad1033b4b1c5",
+  "title": "きたない君がいちばんかわいい",
+  "author": "まにお",
+  "genre": "漫画",
+  "tags": [
+   "学園",
+   "ラブコメ",
+   "心理サスペンス",
+   "ヤンデレ"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3955/9784758023955_1_3.jpg?_ex=600x600",
+  "volumes": 5,
+  "status": "完結"
+ },
+ {
+  "id": "c3207fe2-9b23-4872-a9a8-3fd84ae8105b",
+  "title": "安達としまむら",
+  "author": "入間人間",
+  "genre": "小説",
+  "tags": [
+   "日常",
+   "ラノベ",
+   "純愛",
+   "名作",
+   "アニメ化",
+   "青春",
+   "学園"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1886/9784757551886.jpg?_ex=600x600",
+  "volumes": 13,
+  "status": "完結"
+ },
+ {
+  "id": "32e1a268-14bf-493d-b66b-51cf25aafa47",
+  "title": "魔法少女まどか☆マギカ",
+  "author": "虚淵玄",
+  "genre": "アニメ",
+  "tags": [
+   "ダーク",
+   "感動",
+   "名作",
+   "タイムループ",
+   "アクション・バトル",
+   "ドラマ・シリアス",
+   "ファンタジー",
+   "魔法少女",
+   "心理サスペンス",
+   "青春",
+   "ツンデレ"
+  ],
+  "romantic_yuri_status": "unknown",
+  "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9756-QnUGwlwwnsuN.jpg",
+  "volumes": null,
+  "status": "完結"
+ },
+ {
+  "id": "3b8850fc-e2a6-4389-baad-c8b1d8481805",
+  "title": "きみが死ぬまで恋をしたい",
+  "author": "あおのなち（原作）",
+  "genre": "アニメ",
+  "tags": [
+   "ファンタジー",
+   "ダーク",
+   "ドラマ・シリアス",
+   "学園"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187260-WW5RBa5NINRP.jpg",
+  "volumes": 13,
+  "status": "連載中"
+ },
+ {
+  "id": "cf9f6c47-ed54-42ff-8eff-f279a33a8c90",
+  "title": "わたしが恋人になれるわけないじゃん、ムリムリ!（※ムリじゃなかった!?）",
+  "author": "みかみてれん",
+  "genre": "小説",
+  "tags": [
+   "学園",
+   "ラブコメ",
+   "ラノベ",
+   "アニメ化",
+   "百合ハーレム",
+   "お色気"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3568/9784086313568_1_2.jpg?_ex=600x600",
+  "volumes": 8,
+  "status": "連載中"
+ },
+ {
+  "id": "215dcb73-6179-45cc-848a-44c9c40615bb",
+  "title": "私を喰べたい、ひとでなし",
+  "author": "苗川采",
+  "genre": "Web漫画",
+  "tags": [
+   "ドラマ・シリアス",
+   "ホラー",
+   "心理サスペンス",
+   "人外・モンスター娘",
+   "学園"
+  ],
+  "romantic_yuri_status": "unknown",
+  "cover_url": "https://cdn.comic-walker.com/integration/cdpf/resources/003258/1fd67b9c-5593-41e1-952f-8c5ce6af0bb0.jpg",
+  "volumes": null,
+  "status": "連載中"
+ },
+ {
+  "id": "1437013c-655c-4eb0-aec2-e5ef8ad0760e",
+  "title": "少女☆歌劇 レヴュースタァライト",
+  "author": "キネマシトラス（制作）",
+  "genre": "アニメ",
+  "tags": [
+   "声優・芸能界",
+   "音楽・バンド",
+   "名作",
+   "アクション・バトル",
+   "ドラマ・シリアス",
+   "心理サスペンス",
+   "学園",
+   "青春"
+  ],
+  "romantic_yuri_status": "unknown",
+  "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113024-OdzOh0OKFPTN.png",
+  "volumes": 12,
+  "status": "完結"
+ },
+ {
+  "id": "9146ff1b-bb23-46f7-b688-99ad8e67e3d5",
+  "title": "雨夜の月",
+  "author": "くずしろ",
+  "genre": "漫画",
+  "tags": [
+   "社会人",
+   "感動",
+   "ドラマ・シリアス",
+   "日常",
+   "学園",
+   "青春"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8534/9784065438534_1_7.jpg?_ex=600x600",
+  "volumes": 12,
+  "status": "連載中"
+ },
+ {
+  "id": "09dc8ecd-7498-40d0-bb10-61188367f657",
+  "title": "明日ちゃんのセーラー服",
+  "author": "博",
+  "genre": "漫画",
+  "tags": [
+   "日常",
+   "学園",
+   "ほのぼの",
+   "青春"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8936/9784088938936_1_22.jpg?_ex=600x600",
+  "volumes": 16,
+  "status": "連載中"
+ },
+ {
+  "id": "ac781854-2e6d-4625-a852-78c0a149ba5b",
+  "title": "私の百合はお仕事です！",
+  "author": "未幡（原作）",
+  "genre": "アニメ",
+  "tags": [
+   "コメディ",
+   "学園",
+   "社会人",
+   "ラブコメ",
+   "ドラマ・シリアス",
+   "声優・芸能界",
+   "日常"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx149028-RrE2FX1FGIMv.png",
+  "volumes": 13,
+  "status": "完結"
+ },
+ {
+  "id": "f77ad671-47b3-450f-957f-d4e89d61d5b0",
+  "title": "上伊那ぼたん、酔へる姿は百合の花",
+  "author": "塀（原作）",
+  "genre": "アニメ",
+  "tags": [
+   "日常",
+   "コメディ",
+   "ほのぼの",
+   "同居・同棲",
+   "大学生",
+   "料理・グルメ"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187869-LUn3dyTzuKUq.jpg",
+  "volumes": null,
+  "status": "完結"
+ },
+ {
+  "id": "cc2687a4-ede2-44ac-9625-cafd8cb9a233",
+  "title": "魔法少女にあこがれて",
+  "author": "小野中彰大",
+  "genre": "漫画",
+  "tags": [
+   "ラブコメ",
+   "アニメ化",
+   "魔法少女",
+   "コメディ",
+   "日常",
+   "お色気"
+  ],
+  "romantic_yuri_status": "unknown",
+  "cover_url": null,
+  "volumes": 13,
+  "status": "連載中"
+ },
+ {
+  "id": "15d4f532-7b77-445f-a7fa-5b306a1dc40a",
+  "title": "超かぐや姫！",
+  "author": "米田タロウ",
+  "genre": "Web漫画",
+  "tags": [
+   "アクション・バトル",
+   "コメディ",
+   "音楽・バンド",
+   "SF"
+  ],
+  "romantic_yuri_status": "unknown",
+  "cover_url": "https://cdn.comic-walker.com/integration/cdpf/resources/008281/4c0ef370-bb24-4ab0-af06-758f61fec07e.jpg",
+  "volumes": null,
+  "status": "連載中"
+ },
+ {
+  "id": "d0fe44a8-f8a3-4e08-8371-55ea9ad0be2a",
+  "title": "リコリス・リコイル",
+  "author": "アサウラ（原案）",
+  "genre": "アニメ",
+  "tags": [
+   "アクション・バトル",
+   "バディ",
+   "SF",
+   "名作",
+   "日常",
+   "社会人",
+   "ツンデレ"
+  ],
+  "romantic_yuri_status": "unknown",
+  "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx143270-rfkyiYXhek5w.jpg",
+  "volumes": 13,
+  "status": "完結"
+ },
+ {
+  "id": "e1510201-5391-48a7-b8d7-bedfcaa2ea9a",
+  "title": "ぜんぶ壊して地獄で愛して",
+  "author": "くわばらたもつ",
+  "genre": "漫画",
+  "tags": [
+   "学園",
+   "ダーク",
+   "ドラマ・シリアス",
+   "心理サスペンス",
+   "青春"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5904/9784758025904_1_3.jpg?_ex=600x600",
+  "volumes": 6,
+  "status": "連載中"
+ },
+ {
+  "id": "c93b5376-af78-4152-bfe3-9e19a90df0a9",
+  "title": "ハッピーシュガーライフ",
+  "author": "鍵空とみやき",
+  "genre": "漫画",
+  "tags": [
+   "ダーク",
+   "心理サスペンス",
+   "純愛",
+   "アニメ化",
+   "ドラマ・シリアス",
+   "ホラー",
+   "ミステリー",
+   "ヤンデレ",
+   "年の差"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7698/9784757547698.jpg?_ex=600x600",
+  "volumes": 10,
+  "status": "完結"
+ },
+ {
+  "id": "52bfc6fb-2cf1-43fa-a796-fd2b6167a592",
+  "title": "今日はカノジョがいないから",
+  "author": "岩見樹代子",
+  "genre": "Web漫画",
+  "tags": [
+   "ドラマ・シリアス",
+   "ドロドロ",
+   "三角関係",
+   "ヤンデレ"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://cdn-img.ichicomi.com/public/series-thumbnail/2550912965923183674-2ca982c29ce9a3a16040bb88f88647a3?1752730099",
+  "volumes": null,
+  "status": "連載中"
+ },
+ {
+  "id": "6ed68477-1b0e-4909-8002-61c6e1437ead",
+  "title": "転生王女と天才令嬢の魔法革命",
+  "author": "鴉ぴえろ",
+  "genre": "小説",
+  "tags": [
+   "ファンタジー",
+   "異世界",
+   "完結済み",
+   "アニメ化",
+   "アクション・バトル",
+   "ドラマ・シリアス",
+   "ラノベ"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2999/9784040762999_1_10.jpg?_ex=600x600",
+  "volumes": 13,
+  "status": "完結"
+ },
+ {
+  "id": "66c4eadd-4b42-4cad-b419-ae03e7886dbf",
+  "title": "裏世界ピクニック",
+  "author": "宮澤伊織 / 水野英多",
+  "genre": "漫画",
+  "tags": [
+   "アクション・バトル",
+   "ファンタジー",
+   "ホラー",
+   "ミステリー",
+   "SF"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5155/9784301005155_1_4.jpg?_ex=600x600",
+  "volumes": 16,
+  "status": "連載中"
+ },
+ {
+  "id": "86a7d1e3-5eec-471e-8e3e-503434acc92b",
+  "title": "ゆるゆり",
+  "author": "なもり",
+  "genre": "漫画",
+  "tags": [
+   "コメディ",
+   "日常",
+   "学園",
+   "4コマ",
+   "アニメ化",
+   "三角関係",
+   "部活"
+  ],
+  "romantic_yuri_status": "yes",
+  "cover_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0553/9784758070553.jpg?_ex=600x600",
+  "volumes": 24,
+  "status": "連載中"
+ },
+ {
+  "id": "6a92eae8-c049-4ae0-a094-384ffab3a6ca",
+  "title": "小林さんちのメイドラゴン",
+  "author": "クール教信者",
+  "genre": "漫画",
+  "tags": [
+   "ラブコメ",
+   "ファンタジー",
+   "日常",
+   "メイド",
+   "人外・モンスター娘"
+  ],
+  "romantic_yuri_status": "unknown",
+  "cover_url": null,
+  "volumes": 20,
+  "status": "連載中"
+ }
+]
