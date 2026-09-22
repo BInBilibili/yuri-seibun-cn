@@ -1,11 +1,11 @@
-// 把全部作品封面下载到 dist/covers/,实现自托管
+// 把全部作品封面下载到 public/covers/,随 vite build 一起进 dist/,实现自托管
 // 直连失败时自动走 wsrv.nl 图片代理(楽天 CDN 在部分网络不可达)
 // 已存在的文件跳过,可重复运行
 import fs from "node:fs";
 import path from "node:path";
 
 const works = JSON.parse(fs.readFileSync("src/data/works.json", "utf8"));
-const outDir = path.join("dist", "covers");
+const outDir = path.join("public", "covers");
 fs.mkdirSync(outDir, { recursive: true });
 
 const targets = works.filter((w) => w.cover_url);

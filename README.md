@@ -8,7 +8,7 @@
 - **选择数量:10~20 部**(原站为 5 部),不足 10 部不能分析,满 20 部封顶。
 - 全部界面与 941 个去重作品名均已汉化,作品名以**国内常见译名**为主、日文原名小字标注;无通行译名的作品按含义意译。
 - 搜索同时匹配中文译名 / 日文原名 / 作者名。
-- 封面图在部署时下载并自托管(楽天 CDN 在部分网络不可达),本地加载失败时自动回退原始 URL / 占位图。
+- 封面图**自托管**:1012 张封面已下载进仓库 `public/covers/`(楽天 CDN 在部分网络不可达),本地加载失败时自动回退原始 URL / 占位图。
 - 不包含原站的登录、收藏、心愿单与联盟广告;推荐区、X/LINE 分享、卡片图片保存(html2canvas)均已实现。
 
 ## 算法(与原站一致)
@@ -38,16 +38,26 @@ node scripts/fetch-covers.mjs   # 可选:本地也下载封面(需能访问楽�
 
 ## 部署
 
-当前采用 gh-pages 分支发布:
+推送到 `main` 后由 GitHub Actions 自动构建并发布到 GitHub Pages:
+
+1. 仓库 **Settings → Pages → Source** 选 **GitHub Actions**。
+2. 推送 `main`(或在 Actions 页手动 `Run workflow`)。
+3. 站点地址 `https://<用户名>.github.io/yuri-seibun-cn/`,与 `vite.config.ts` 的 `base: "/yuri-seibun-cn/"` 对应;换成别的仓库名需同步改 `base`。
+
+工作流见 `.github/workflows/deploy.yml`(check → build → upload-pages-artifact → deploy-pages)。
+
+本地预览:
 
 ```bash
-npm run build
-node scripts/fetch-covers.mjs   # 下载全部封面到 dist/covers(直连失败自动走 wsrv.nl 代理)
-npx gh-pages -d dist            # 推送 dist 到 gh-pages 分支
+npm run build && npm run preview
 ```
 
-仓库内保留 `.github/workflows/deploy.yml`(未跟踪):若 token 具有 `workflow` 权限
-(`gh auth refresh -s workflow`),可推送到 GitHub 后改用 Actions 自动构建发布。
+封面已随仓库提供(`public/covers/`),`vite build` 会自动复制进 `dist/covers/`,无需在构建期联网。
+如需增量更新封面(已存在的文件跳过):
+
+```bash
+node scripts/fetch-covers.mjs
+```
 
 ## 版权说明
 
