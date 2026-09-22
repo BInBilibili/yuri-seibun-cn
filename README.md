@@ -38,11 +38,13 @@ node scripts/fetch-covers.mjs   # 可选:本地也下载封面(需能访问楽�
 
 ## 部署
 
+线上地址:<https://binbilibili.github.io/yuri-seibun-cn/>
+
 推送到 `main` 后由 GitHub Actions 自动构建并发布到 GitHub Pages:
 
-1. 仓库 **Settings → Pages → Source** 选 **GitHub Actions**。
+1. 仓库 **Settings → Pages → Source** 选 **GitHub Actions**(已配置)。
 2. 推送 `main`(或在 Actions 页手动 `Run workflow`)。
-3. 站点地址 `https://<用户名>.github.io/yuri-seibun-cn/`,与 `vite.config.ts` 的 `base: "/yuri-seibun-cn/"` 对应;换成别的仓库名需同步改 `base`。
+3. 站点路径由 `vite.config.ts` 的 `base: "/yuri-seibun-cn/"` 决定;换成别的仓库名需同步改 `base`。
 
 工作流见 `.github/workflows/deploy.yml`(check → build → upload-pages-artifact → deploy-pages)。
 
