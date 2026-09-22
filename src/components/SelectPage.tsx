@@ -1,11 +1,21 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { genreZh, searchWorks, staples, titleZh } from "../data/core";
+import {
+  GENRE_FILTERS,
+  genreCounts,
+  genreZh,
+  filterWorks,
+  searchWorks,
+  staples,
+  titleZh,
+  works
+} from "../data/core";
 import type { Work } from "../data/types";
 import CoverImg from "./CoverImg";
 import { genreBadgeColor } from "./shared";
 
 const MIN = 10;
 const MAX = 20;
+const BROWSE_PAGE = 60;
 
 interface Props {
   onAnalyze: (ids: string[], name: string) => void;
@@ -34,6 +44,15 @@ export default function SelectPage({ onAnalyze }: Props) {
   const n = selected.length;
   const maxed = n >= MAX;
   const canAnalyze = n >= MIN && n <= MAX;
+
+  // 「浏览全部作品」:关键词 + 体裁过滤,分页显示
+  const [genre, setGenre] = useState<string | null>(null);
+  const [visible, setVisible] = useState(BROWSE_PAGE);
+  const browseList = useMemo(() => filterWorks(debounced, genre), [debounced, genre]);
+  useEffect(() => {
+    setVisible(BROWSE_PAGE);
+  }, [debounced, genre]);
+  const browseShown = browseList.slice(0, visible);
 
   const toggle = (w: Work) => {
     setSelected((prev) => {
@@ -158,6 +177,56 @@ export default function SelectPage({ onAnalyze }: Props) {
           );
         })}
       </div>
+
+      <h2 className="section-title">
+        浏览全部作品
+        <span className="browse-count">
+          共 {browseList.length} 部{debounced ? `(按搜索“${debounced}”过滤)` : ""}
+        </span>
+      </h2>
+      <div className="genre-chips">
+        {GENRE_FILTERS.map((g) => (
+          <button
+            key={g.label}
+            className={`genre-chip${genre === g.key ? " active" : ""}`}
+            onClick={() => setGenre(g.key)}
+          >
+            {g.label}
+            <span className="genre-num">{g.key ? genreCounts[g.key] ?? 0 : works.length}</span>
+          </button>
+        ))}
+      </div>
+      <div className="browse-grid">
+        {browseShown.map((w) => {
+          const picked = selectedIds.has(w.id);
+          return (
+            <div className="browse-card" key={w.id}>
+              <CoverImg work={w} className="browse-img" alt={titleZh(w.title)} />
+              <div className="browse-body">
+                <div className="browse-title" title={`${titleZh(w.title)}(${w.title})`}>
+                  {titleZh(w.title)}
+                </div>
+                <div className="browse-ja">{w.title}</div>
+                <div className="browse-author">{w.author}</div>
+                <button
+                  className={`pick-btn${picked ? " picked" : ""}`}
+                  disabled={picked || maxed}
+                  onClick={() => toggle(w)}
+                >
+                  {picked ? "已选择" : "＋ 选择"}
+                </button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      {browseShown.length < browseList.length && (
+        <div className="browse-more-row">
+          <button className="browse-more" onClick={() => setVisible((v) => v + BROWSE_PAGE)}>
+            显示更多(还有 {browseList.length - browseShown.length} 部)
+          </button>
+        </div>
+      )}
 
       <p style={{ color: "var(--muted)", fontSize: 13, marginTop: 18 }}>
         想不出 10 部?也可以去原站试试只需回答心情的{" "}

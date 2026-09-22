@@ -62,3 +62,31 @@ export function searchWorks(query: string, limit = 12): Work[] {
   }
   return hits;
 }
+
+/** 「浏览全部作品」用:按关键词(可为空)+ 体裁过滤,返回全部命中(不截断) */
+export function filterWorks(query: string, genre: string | null): Work[] {
+  const q = nfc(query).trim().toLowerCase();
+  const terms = q ? q.split(/\s+/).filter(Boolean) : [];
+  const hits: Work[] = [];
+  for (const e of searchIndex) {
+    if (terms.length && !terms.every((t) => e.hay.includes(t))) continue;
+    const w = workById.get(e.id);
+    if (w && (!genre || w.genre === genre)) hits.push(w);
+  }
+  return hits;
+}
+
+export const genreCounts: Record<string, number> = (() => {
+  const counts: Record<string, number> = {};
+  for (const w of works) counts[w.genre] = (counts[w.genre] ?? 0) + 1;
+  return counts;
+})();
+
+export const GENRE_FILTERS: { key: string | null; label: string }[] = [
+  { key: null, label: "全部" },
+  { key: "漫画", label: "漫画" },
+  { key: "Web漫画", label: "网漫" },
+  { key: "小説", label: "小说" },
+  { key: "アニメ", label: "动画" },
+  { key: "ゲーム", label: "游戏" }
+];

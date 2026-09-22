@@ -22,6 +22,7 @@ export default function ResultPage({ ids, name, onBack }: Props) {
   const [copied, setCopied] = useState(false);
   const [saving, setSaving] = useState(false);
   const [wished, setWished] = useState<Set<string>>(new Set());
+  const [preview, setPreview] = useState<string | null>(null);
 
   const shareUrl = window.location.href;
   const xText = `我分析了我的百合成分🔬\n\n#我的百合成分\n${shareUrl}`;
@@ -61,6 +62,8 @@ export default function ResultPage({ ids, name, onBack }: Props) {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const isMobile = () => /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+
   const saveCard = async (ref: React.RefObject<HTMLDivElement>, filename: string) => {
     if (!ref.current) return;
     setSaving(true);
@@ -70,10 +73,16 @@ export default function ResultPage({ ids, name, onBack }: Props) {
         backgroundColor: "#ffffff",
         useCORS: true
       });
-      const a = document.createElement("a");
-      a.href = canvas.toDataURL("image/png");
-      a.download = filename;
-      a.click();
+      const dataUrl = canvas.toDataURL("image/png");
+      if (isMobile()) {
+        // QQ/微信内置浏览器不支持 a[download],改为长按存图弹层
+        setPreview(dataUrl);
+      } else {
+        const a = document.createElement("a");
+        a.href = dataUrl;
+        a.download = filename;
+        a.click();
+      }
     } catch (e) {
       alert("生成图片失败,部分封面图跨域受限。可尝试截图保存。");
     } finally {
@@ -231,6 +240,18 @@ export default function ResultPage({ ids, name, onBack }: Props) {
 
       {/* 诊断结果说明(供无障碍与调试) */}
       <span hidden>{typeName?.name}</span>
+
+      {preview && (
+        <div className="img-preview-overlay" onClick={() => setPreview(null)}>
+          <div className="img-preview-card" onClick={(e) => e.stopPropagation()}>
+            <p className="img-preview-hint">
+              手机端已为你生成图片:请<b>长按下方图片</b>选择「保存图片」(QQ/微信内置浏览器不支持直接下载)
+            </p>
+            <img src={preview} alt="百合成分卡片" />
+            <button className="btn btn-copy" onClick={() => setPreview(null)}>关闭</button>
+          </div>
+        </div>
+      )}
     </main>
   );
 }

@@ -359,6 +359,50 @@ a { color: var(--green-deep); }
 
 .loading-page { text-align: center; color: var(--muted); padding: 80px 0; }
 
+/* ===== 浏览全部作品 ===== */
+.browse-count { font-family: var(--sans); font-size: 13px; font-weight: 400; color: var(--muted); margin-left: 10px; }
+
+.genre-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+
+.genre-chip { border: 1px solid var(--green-line); background: #fff; border-radius: 999px; padding: 6px 14px; font-size: 13.5px; color: var(--ink); }
+
+.genre-chip:hover { border-color: var(--green); }
+
+.genre-chip.active { background: var(--green); border-color: var(--green); color: #fff; font-weight: 700; }
+
+.genre-chip .genre-num { font-size: 11.5px; margin-left: 5px; opacity: .75; font-variant-numeric: tabular-nums; }
+
+.browse-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 10px; }
+
+.browse-card { background: #fff; border: 1px solid var(--green-line); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+
+.browse-card .browse-img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; background: var(--green-soft); }
+
+.browse-card .browse-img-fallback { width: 100%; aspect-ratio: 3 / 4; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 12px; background: var(--green-soft); }
+
+.browse-body { padding: 8px 10px 10px; display: flex; flex-direction: column; gap: 3px; flex: 1; }
+
+.browse-title { font-size: 13px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+.browse-ja, .browse-author { color: var(--muted); font-size: 11px; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+
+.browse-body .pick-btn { margin-top: auto; padding: 5px 0; font-size: 12.5px; }
+
+.browse-more-row { text-align: center; margin-top: 16px; }
+
+.browse-more { border: 1px solid var(--green); background: #fff; color: var(--green-deep); border-radius: 999px; padding: 9px 26px; font-size: 14px; font-weight: 700; }
+
+.browse-more:hover { background: var(--green); color: #fff; }
+
+/* ===== 手机端长按存图弹层 ===== */
+.img-preview-overlay { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1000; background: #141e1ab8; display: flex; align-items: center; justify-content: center; padding: 18px; }
+
+.img-preview-card { background: #fff; border-radius: 14px; padding: 14px; max-width: 520px; width: 100%; max-height: 92vh; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; align-items: center; }
+
+.img-preview-hint { margin: 0; font-size: 13.5px; color: var(--ink); line-height: 1.6; text-align: center; align-self: stretch; }
+
+.img-preview-card img { max-width: 100%; border: 1px solid var(--green-line); border-radius: 8px; }
+
 @media (max-width: 560px) {
   .hero h1 { font-size: 26px; }
   .card-title { font-size: 20px; }
